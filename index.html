@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc6431e0cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/468-thumbnail.png" class="song-img" alt="">
+            <h1>Tum Hi Ho Piano Cover</h1>
+            <p>Arijit Singh & Aakash Desai</p>
+
+            <audio id="song">
+                <source src="media/Tum_Hi_Ho___Piano_Cover___Arijit_Singh___Aakash_Desai(360p).mp4" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls" role="group" aria-label="Media controls">
+                <div role="button" aria-label="Previous track"><i class="fa-solid fa-backward"></i></div>
+                <div role="button" aria-label="Play/Pause" onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div role="button" aria-label="Next track"><i class="fa-solid fa-forward"></i></div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
